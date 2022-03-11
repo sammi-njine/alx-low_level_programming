@@ -1,2 +1,2 @@
 #!/bin/bash
-gcc `echo $CFILE` -o `echo $CFILE | rev | sed '0,/c/s//o/' | rev`
+gcc -c `echo $CFILE`
