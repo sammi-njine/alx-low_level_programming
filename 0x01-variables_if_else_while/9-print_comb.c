@@ -10,12 +10,15 @@
 
 int main(void)
 {
-	char x = '';
+	int x;
 
-	while (x <= 'z')
+	for (x = 0; x <= 9; x++)
 	{
-	putchar(x);
-	x++;
+	putchar((x % 10) + '0');
+		if (x == 9)
+		{
+		continue;
+		}
 	putchar(',');
 	putchar(' ');
 	}
